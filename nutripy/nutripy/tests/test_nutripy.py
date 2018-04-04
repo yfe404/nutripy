@@ -1,5 +1,5 @@
 import unittest
-from src.nutripy import Nutripy
+from ..nutripy import Nutripy
 
 
 class TddNutripy(unittest.TestCase):
