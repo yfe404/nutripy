@@ -1,1 +1,25 @@
 * Nutripy
+
+
+** Installation 
+
+#+BEGIN_SRC sh
+pip install nutripy
+#+END_SRC
+
+
+** Usage
+
+#+BEGIN_SRC python
+from nutripy import Nutripy
+
+nut = Nutripy()
+        
+age = 25
+weight = 60
+height = 180
+gender = "male"
+activity = "sedentary"
+goal = "loss_1000"
+daily_needs = nut.get_daily_needs(age, weight, height, gender, activity, goal)
+#+END_SRC
