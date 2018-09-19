@@ -1,5 +1,7 @@
 * Nutripy
 
+[[https://codeclimate.com/github/yafeunteun/nutripy/maintainability][file:https://api.codeclimate.com/v1/badges/2ccd4965df3cd83f13ad/maintainability.svg]]
+
 
 ** Installation 
 
