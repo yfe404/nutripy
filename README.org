@@ -1,5 +1,6 @@
 * Nutripy
 
+[[https://travis-ci.org/yafeunteun/nutripy][file:https://travis-ci.org/yafeunteun/nutripy.svg?branch=master]] [[https://coveralls.io/r/yafeunteun/nutripy][file:https://coveralls.io/repos/yafeunteun/nutripy/badge.svg]]
 [[https://codeclimate.com/github/yafeunteun/nutripy/maintainability][file:https://api.codeclimate.com/v1/badges/2ccd4965df3cd83f13ad/maintainability.svg]]
 
 
