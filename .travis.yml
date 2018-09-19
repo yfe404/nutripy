@@ -1,6 +1,8 @@
 language: python
 python:
   - "3.6"
+install:
+  - pip install pipenv 
 before_script:
   - pipenv install --dev
   - pipenv shell
