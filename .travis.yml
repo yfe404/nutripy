@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.6"
+before_script:
+  - pipenv install --dev
+  - pipenv shell
+  - pip install python-coveralls  # Add me to install python-coveralls
+  - nosetests --with-coverage  nutripy
+after_success:
+  - coveralls                     # Add me to upload reports to coveralls.io
