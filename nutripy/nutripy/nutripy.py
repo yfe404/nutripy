@@ -1,4 +1,5 @@
 from enum import Enum
+from .config import *
 
 class Gender(Enum):
     MALE = 5
@@ -12,13 +13,11 @@ class Activity(Enum):
 
 
 class Goal(Enum):
-    LOSS_1000 = -1000
-    LOSS_500 = -500
+    LOSS = -CALORIES_STEP_SIZE
     MAINTAIN = 0
-    GAIN_500 = 500
-    GAIN_1000 = 1000
+    GAIN = CALORIES_STEP_SIZE
 
-
+    
 class Nutripy(object):
     def _get_basal_metabolic_rate(self, age, weight, height, gender):
         bmr = (10 * weight) + (6.25 * height) - (5 * age) + gender.value
