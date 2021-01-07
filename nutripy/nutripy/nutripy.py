@@ -6,11 +6,9 @@ class Gender(Enum):
 
 
 class Activity(Enum):
-    SEDENTARY = 1.2
-    LIGHTLY_ACTIVE = 1.375
-    MODERATELY_ACTIVE = 1.55
-    VERY_ACTIVE = 1.725
-    EXTRA_ACTIVE = 1.9
+    SEDENTARY = 1.4
+    ACTIVE = 1.6
+    VERY_ACTIVE = 1.7
 
 
 class Goal(Enum):
