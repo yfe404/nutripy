@@ -17,6 +17,7 @@ class Goal(Enum):
     MAINTAIN = 0
     GAIN = CALORIES_STEP_SIZE
 
+
     
 class Nutripy(object):
     def _get_basal_metabolic_rate(self, age, weight, height, gender):
