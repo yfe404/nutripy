@@ -1,11 +1,11 @@
 import setuptools
     
-with open("README.org", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
     
 setuptools.setup(
     name="nutripy", 
-    version="0.2",
+    version="0.3",
     author="Yann Feunteun",
     author_email="yann.feunteun@protonmail.com",
     description="A Python module for computing calorie requirements for \
