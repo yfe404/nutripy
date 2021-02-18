@@ -46,3 +46,11 @@ The parameter *goal* can take several values described in this section.
 - =maintain=: maintain your weight
 - =gain_500=: gain 0.5 kg per week
 - =gain_1000=: gain 1 kg per week
+
+
+*** Weight loss / mass gain management (work in progress)
+
+    The main feature of Nutripy is its ability to manage one's weight
+    loss and/or weight gain. 
+    
+    *Work In Progress*
