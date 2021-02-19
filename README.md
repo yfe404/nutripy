@@ -1,14 +1,14 @@
 
 # Table of Contents
 
-1.  [Nutripy](#orgd1a3798)
-    1.  [Installation](#orgb43f36b)
-    2.  [Usage](#org1c5c1e1)
-        1.  [Activity](#org6c4da6d)
-        2.  [Goal](#orgb0579fe)
+1.  [Nutripy](#orgcca8af6)
+    1.  [Installation](#org7b34a71)
+    2.  [Usage](#orgdb8aa60)
+        1.  [Compute daily needs](#orgc931f04)
+        2.  [Weight loss / mass gain management (work in progress)](#org07163db)
 
 
-<a id="orgd1a3798"></a>
+<a id="orgcca8af6"></a>
 
 # Nutripy
 
@@ -16,17 +16,23 @@
 [![img](https://api.codeclimate.com/v1/badges/2ccd4965df3cd83f13ad/maintainability.svg)](https://codeclimate.com/github/yafeunteun/nutripy/maintainability)
 
 
-<a id="orgb43f36b"></a>
+<a id="org7b34a71"></a>
 
 ## Installation
 
     pip install nutripy
 
 
-<a id="org1c5c1e1"></a>
+<a id="orgdb8aa60"></a>
 
 ## Usage
 
+
+<a id="orgc931f04"></a>
+
+### Compute daily needs
+
+    import nutripy
     from nutripy import Nutripy
     
     nut = Nutripy()
@@ -34,34 +40,18 @@
     age = 25
     weight = 60
     height = 180
-    gender = "male"
-    activity = "sedentary"
-    goal = "loss_1000"
+    gender = nutripy.nutripy.Gender.MALE
+    activity = nutripy.nutripy.Activity.SEDENTARY
+    goal = nutripy.nutripy.Goal.GAIN
     daily_needs = nut.get_daily_needs(age, weight, height, gender, activity, goal)
 
 
-<a id="org6c4da6d"></a>
+<a id="org07163db"></a>
 
-### Activity
+### Weight loss / mass gain management (work in progress)
 
-The parameter **activity** can take several values described in this section.
+The main feature of Nutripy is its ability to manage one's weight
+loss and/or weight gain. 
 
--   `sedentary`: little or no exercice
--   `lightly_active`: exercice/sports 1-3 times/week
--   `moderately_active`: exercice/sports 3-5 times/week
--   `very_active`: exercice/sports 6-7 times/week
--   `extra_active`: very hard exercice/sports or physical job
-
-
-<a id="orgb0579fe"></a>
-
-### Goal
-
-The parameter **goal** can take several values described in this section.
-
--   `loss_1000`: lose 1 kg per week
--   `loss_500`: lose 0.5 kg per week
--   `maintain`: maintain your weight
--   `gain_500`: gain 0.5 kg per week
--   `gain_1000`: gain 1 kg per week
+**Work In Progress**
 
