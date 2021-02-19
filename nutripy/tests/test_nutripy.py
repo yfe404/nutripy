@@ -22,9 +22,9 @@ class TddNutripy(unittest.TestCase):
         height = 180
         gender = Gender.MALE
         activity = Activity.SEDENTARY
-        goal = Goal.LOSS_1000
+        goal = Goal.LOSS
         daily_needs = nut.get_daily_needs(age, weight, height, gender, activity, goal)
-        self.assertEqual(daily_needs, 926)
+        self.assertEqual(daily_needs, 1997)
         
         
 if __name__ == '__main__':
