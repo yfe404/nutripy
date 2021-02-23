@@ -1,1 +1,1 @@
-from .nutripy import Nutripy
+from .nutripy import Nutripy, Gender, Activity, Goal

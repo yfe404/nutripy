@@ -1,5 +1,5 @@
 import unittest
-from ..nutripy import Nutripy, Gender, Activity, Goal
+from nutripy import Nutripy, Gender, Activity, Goal
 
 
 class TddNutripy(unittest.TestCase):
