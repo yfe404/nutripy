@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     
 setuptools.setup(
     name="nutripy", 
-    version="0.6.1",
+    version="0.6.2",
     author="Yann Feunteun",
     author_email="yann.feunteun@protonmail.com",
     description="A Python module for computing calorie requirements for \
@@ -13,6 +13,10 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yfe404/nutripy",
+    install_requires=[
+        'scipy',
+        'numpy'
+     ],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
