@@ -7,10 +7,6 @@ from enum import Enum
 from scipy.ndimage.filters import uniform_filter1d
 
 
-class UnhandledCaseException(Exception):
-    pass
-
-
 def is_close(a, b, close=150):
     if abs(a - b) < close:
         return True
@@ -85,7 +81,7 @@ def get_new_state(age, height, gender, activity, goal, weight_history, phases_hi
             duration = 1
 
     else:
-        raise UnhandledCaseException
+        raise NotImplementedError
 
     if current_phase == Phase.STOP:
         if is_close(tdee, tdci, close=200):
@@ -131,7 +127,7 @@ def get_new_state(age, height, gender, activity, goal, weight_history, phases_hi
             if not is_close(tdee, tdci, close=200):
                 delta_cal = CALORIES_STEP_SIZE
     else:
-        raise UnhandledCaseException
+        raise NotImplementedError
 
 
     return {
