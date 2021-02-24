@@ -1,5 +1,5 @@
-from nutripy import Nutripy, Goal, Gender, Activity
-from config import *
+from .nutripy import Nutripy, Goal, Gender, Activity
+from .config import *
 
 import numpy as np
 from enum import Enum
