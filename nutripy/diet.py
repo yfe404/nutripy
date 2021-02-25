@@ -80,6 +80,10 @@ def get_new_state(age, height, gender, activity, goal, weight_history, phases_hi
             new_phase = Phase.STOP
             duration = 1
 
+    elif goal == Goal.MAINTAIN:
+        pass # should be pass since everything is handled below for this trivial goal 
+
+            
     else:
         raise NotImplementedError
 
@@ -91,7 +95,7 @@ def get_new_state(age, height, gender, activity, goal, weight_history, phases_hi
             #phases_history.append(new_phase)
             
     if current_phase == Phase.MAINTAINANCE:
-            new_phase = Phase.MAINTAINANCE # todo: renew main Phase or do another goal
+        new_phase = Phase.MAINTAINANCE # todo: renew main Phase or do another goal
       
     print(current_phase)
     if new_phase == Phase.MAINTAINANCE:
@@ -126,6 +130,11 @@ def get_new_state(age, height, gender, activity, goal, weight_history, phases_hi
 
             if not is_close(tdee, tdci, close=200):
                 delta_cal = CALORIES_STEP_SIZE
+
+    elif goal == Goal.MAINTAIN:
+        pass # should be pass since everything is handled above for this trivial goal 
+
+
     else:
         raise NotImplementedError
 
